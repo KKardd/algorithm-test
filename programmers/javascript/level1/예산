@@ -1,0 +1,14 @@
+function solution(d, budget) {
+    var answer = d.sort((a,b) => (a-b));
+    let bud = budget;
+    let cnt = 0;
+    for(let i = 0 ; i < answer.length ; i++){
+        if(bud >= answer[i]){
+            bud = bud - answer[i];
+            cnt++
+        }else{
+            break;
+        }
+    }
+    return cnt;
+}
