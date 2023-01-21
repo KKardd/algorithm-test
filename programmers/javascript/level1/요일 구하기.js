@@ -42,3 +42,19 @@ function solution(a, b) {
         
     }
 }
+
+
+/**
+ * function solution(a, b) {
+    var answer = ["THU","FRI","SAT","SUN","MON","TUE","WED"];
+    const dateMap = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    let date = 0;
+    for(let i = 0; i < (a - 1); i++) {
+        date += dateMap[i];
+    }
+    const term = ((date + b) % 7);
+    console.log(term);
+    return answer[term]
+
+    이게 더 좋은 방법인듯.
+ */
