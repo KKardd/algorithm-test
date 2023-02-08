@@ -2,7 +2,7 @@
  * 
  * 문자열 개수를 판별
  * 
- * 스킬체크 1단계 문제
+ *
  */
 
 function solution(s) {
@@ -27,6 +27,5 @@ function solution(s) {
         }
         answer++;
     }
-
     return answer;
 }
