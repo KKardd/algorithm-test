@@ -13,3 +13,9 @@ function solution(n) {
     answer = parseInt(answer, 3);
     return answer;
 }
+
+
+function solution(n) {
+    let arr = n.toString(3).split('').reverse().join('');
+    return parseInt(arr, 3);
+}
