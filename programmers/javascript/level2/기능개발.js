@@ -22,7 +22,7 @@ function solution(progresses, speeds) {
         cnt = 0;
         for(let j = progresses[i]; j <= 200; j = j + speeds[i]){
             if(j >= 100){
-                cnt_return.push(cnt);
+                ㅂ.push(cnt);
                 break;
             }else{
                 cnt++;
