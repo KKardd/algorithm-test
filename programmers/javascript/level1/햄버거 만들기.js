@@ -31,3 +31,5 @@ function solution(ingredient) {
     }
     return answer;
 } // slice에 마이너스 값을 넣었을 때, 파이썬처럼 뒤에서부터 검색한다는 팁을 얻었다.
+
+11231231
