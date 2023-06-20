@@ -11,8 +11,8 @@ function fac(n) {
 
 const count = input[0];
 for (let i = 1; i <= count; i++) {
-    const N = parseInt(input[i].split(" ")[0]);
-    const M = parseInt(input[i].split(" ")[1]);
+    const N = input[i].split(" ")[0];
+    const M = input[i].split(" ")[1];
     const p = fac(M);
     const q = fac(M - N) * fac(N);
     console.log(Math.round(p / q));
