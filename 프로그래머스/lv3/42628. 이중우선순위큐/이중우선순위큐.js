@@ -6,14 +6,14 @@ function solution(operations) {
         if (operations[i][0] === "I") {
             queue.push(num);
         } else {
+            queue.sort((a, b) => a - b);
             if (num === -1) {
-                queue.sort((a, b) => b - a);
-                queue.pop();
+                queue.shift();
             } else {
-                queue.sort((a, b) => a - b);
                 queue.pop();
             }
         }
+        // console.log(queue);
     }
     if(queue.length === 0){
         return [0, 0];
