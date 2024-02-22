@@ -1,7 +1,9 @@
 const solution = (n) => {
     const arr = [0, 1, 2];
     for(let i = 3; i <= n; i++){
-        arr[i] = (arr[i-1] + arr[i-2]) % 1234567;
+        // arr[i] = (arr[i-1] + arr[i-2]) % 1234567;
+        // console.log(arr)
+        arr.push((arr[i-1] + arr[i-2]) % 1234567)
     }
     return arr[n];
 }
